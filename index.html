@@ -43,7 +43,25 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
 	<!-- <link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css"> -->
-	
+	<style>
+		.inputfields{
+			width: 95%;
+			height: 50px;
+			/* border: 0px; */
+			/* border-bottom: 2px sollid black; */
+		}
+		.sidebar-items{
+			text-align: center;
+		}
+		.sidebar-items .inputfields{
+			border-bottom: 2px solid var(--primary);
+			outline: none;
+			border-top: 0px;
+			border-right: 0px;
+			border-left: 0px;
+
+		}
+	</style>
 </head>
 <body class="ttr-opened-sidebar ttr-pinned-sidebar">
 	
@@ -138,21 +156,31 @@
 		<div class="ttr-sidebar-wrapper content-scroll">
 			<!-- side menu logo start -->
 			<div class="ttr-sidebar-logo">
-				<a href="index.html" style="padding: 20px 20px;"><img alt="" src="assets/images/pic1.jpg" width="100px" height="27" ></a>
+				<a href="index.html" style="padding: 20px 20px;"><img alt="" src="assets/images/pic1.jpg" width="100px" height="27" ></a> 
 			</div>
 
 			<!-- side menu logo end -->
 			<!-- sidebar menu start -->
-			<nav class="ttr-sidebar-navi">
-				<ul>
+			<nav class="ttr-sidebar-navi mt-5">
+				<ul class="sidebar-items">
 					<!-- <input type="text" name="" id=""> -->
 					<li class="active">
-						<a href="index.html" class="ttr-material-button">
-							<span class="ttr-icon"><i class="ti-home"></i></span>
-		                	<span class="ttr-label">Dashborad</span>
-		                </a>
+						<span class="ttr-label">Username:</span> <br>
+						<input type="text" class="ttr-label inputfields"> 
 		            </li>
-					<li>
+					<li class="active">
+						<span class="ttr-label">Email:</span> <br>
+						<input type="text" class="ttr-label inputfields"> 
+		            </li>
+					<li class="active">
+						<span class="ttr-label">Score:</span> <br>
+						<input type="text" class="ttr-label inputfields"> 
+		            </li>
+					<li class="active">
+						<span class="ttr-label">Friends:</span> <br>
+						<input type="text" class="ttr-label inputfields"> 
+		            </li>
+					<!-- <li>
 						<a href="listing.html" class="ttr-material-button">
 							<span class="ttr-icon"><i class="ti-book"></i></span>
 		                	<span class="ttr-label">Listing</span>
@@ -220,7 +248,7 @@
 		                		<a href="user-profile.html" class="ttr-material-button"><span class="ttr-label">User Profile</span></a>
 		                	</li>
 		                </ul>
-		            </li>
+		            </li> -->
 				</ul>
 			</nav>
 			<!-- sidebar menu end -->
